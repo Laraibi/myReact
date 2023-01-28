@@ -1,28 +1,4 @@
-class myReact {
-    constructor(type, props, children) {
-        this.type = type;
-        this.props = props;
-        this.children = children;
-    }
 
-    render() {
-        const element = document.createElement(this.type);
-
-        for (const prop in this.props) {
-            element[prop] = this.props[prop];
-        }
-
-        for (const child of this.children) {
-            if (!(child instanceof myReact)) {
-                element.innerHTML += child;
-            } else {
-                element.appendChild(child.render());
-            }
-        }
-
-        return element;
-    }
-}
 
 data = [
     { name: "yassine", age: 28, sexe: "M" },
