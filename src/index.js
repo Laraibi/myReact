@@ -1,4 +1,5 @@
-const dataFilePath = "../public/data.json";
+const dataFilePath = "./data.json";
+import myReact from "./myReact";
 fetch(dataFilePath)
   .then((response) => response.json())
   .then((response) => {
@@ -42,5 +43,11 @@ const helloWord = () => {
 };
 const btn = new myReact("button", { onclick: helloWord }, ["Search"], 6);
 document.body.appendChild(btn.render());
+const btn2 = new myReact("button", { onclick: helloWord }, ["button 2"], 6);
+document.body.appendChild(btn2.render());
 const h1 = new myReact("h1", { onclick: helloWord }, ["title"], 8);
 document.body.appendChild(h1.render());
+
+
+const section = new myReact("section", {}, [new myReact("h4", { style: "color:green" }, ["Hello World"])])
+document.body.appendChild(section.render());

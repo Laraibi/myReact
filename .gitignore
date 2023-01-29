@@ -1,0 +1,14 @@
+# node_modules directory
+node_modules/
+
+# Dist files
+dist/
+
+# NPM debug logs
+npm-debug.log*
+
+# build/compiled files
+*.js.map
+
+public/bundle.js
+package-lock.json

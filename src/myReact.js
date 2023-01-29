@@ -1,11 +1,11 @@
-class myReact {
+export default class myReact {
   constructor(type, props, children, styleID = null) {
     this.type = type;
     this.props = props;
     this.children = children;
     this.styleID = styleID;
+    this.myTailwindFSPath="./myTailwind.json"
   }
-
   render() {
     const element = document.createElement(this.type);
 
@@ -14,7 +14,7 @@ class myReact {
     }
 
     if (this.styleID) {
-      fetch("myTailwind.json")
+      fetch(this.myTailwindFSPath)
         .then((response) => response.json())
         .then((response) => {
           const theStyle = response.allStyles.find(

@@ -8,11 +8,11 @@ The project consists of the following files:
 
 **myReact.js** This file contains the implementation of the myReact component-based library.
 
-**script.js** This file contains the implementation of a sample project that uses the myReact library to fetch data from a JSON file and build a table based on that data.
+**index.js** This file contains the implementation of a sample project that uses the myReact library to fetch data from a JSON file and build a table based on that data.
 
 **index.html** : This file contains the HTML code that serves as a placeholder for the React components that are created using the **myReact** library.
 
-**handleJson.json** : This file contains functions to handle CRUD operations of the myTailwind.json file via the command line. To launch the file and access its functionality, use the following command on your terminal/command line:
+**handleJson.js** : This file contains functions to handle CRUD operations of the myTailwind.json file via the command line. To launch the file and access its functionality, use the following command on your terminal/command line:
 ```
 PS C:\myReact> node .\handleJson.js 
 
@@ -25,7 +25,17 @@ Select an option:
 
 ## Usage
 
-The project can be run by opening the index.html file in a browser. This file serves as a placeholder for the components that are built using the myReact library. The components are constructed using JavaScript code in the script.js file.
+The project can be run using the following commands:
+
+```
+npm run build  # for building production version
+npm run dev  # for building development version
+npm run watch  # to keep watching the changes and compile
+npm run serve  # for serving the project locally on localhost:8080
+npm run browser  # for opening the browser with the project url
+
+``` 
+
 
 ## Contributions
 

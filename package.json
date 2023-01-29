@@ -1,18 +1,38 @@
 {
-    "name": "my-react",
-    "version": "1.0.0",
-    "description": "A React-like library built from scratch for learning purposes.",
-    "main": "myReact.js",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/Laraibi"
-    },
-    "keywords": [
-        "myReact",
-        "React",
-        "component-based",
-        "library"
-    ],
-    "author": "Laraibi Mehdi",
-    "license": "MIT"
+  "name": "my-react",
+  "version": "1.0.0",
+  "description": "This is a project built with the aim of creating a React-like library from scratch, with the idea of learning the fundamental concepts of how React works. The library provides a component-based structure for building user interfaces.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development",
+    "watch": "webpack --watch",
+    "serve": "webpack-dev-server --open",
+    "browser": "open http://localhost:8080"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Laraibi/myReact.git"
+  },
+  "keywords": [
+    "react",
+    "ui",
+    "javascript",
+    "component"
+  ],
+  "author": "laraibi mehdi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Laraibi/myReact/issues"
+  },
+  "homepage": "https://github.com/Laraibi/myReact#readme",
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.2",
+    "open": "^8.4.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
 }
