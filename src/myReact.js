@@ -20,13 +20,6 @@ class myReact {
           const theStyle = response.allStyles.find(
             (style) => style.id == parseInt(this.styleID)
           );
-
-
-
-          // const theElement = theStyle.styles.find(
-          //   (tag) => tag.htmlElement == this.type
-          // );
-          // console.log(theElement)
           theStyle && (element.className += theStyle.class);
         });
     }
