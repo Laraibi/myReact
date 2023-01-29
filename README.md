@@ -14,7 +14,7 @@ The project consists of the following files:
 
 **handleJson.json** : This file contains the sample JSON data that is used in the script.js file to build the table.
 
-**myTailwind.json** : This file contains the configuration for the Tailwind CSS library.
+**myTailwind.json** : This file contains data to use for Tailwind styles using classNames.
 
 ## Usage
 
