@@ -12,8 +12,15 @@ The project consists of the following files:
 
 **index.html** : This file contains the HTML code that serves as a placeholder for the React components that are created using the **myReact** library.
 
-**handleJson.json** : This file contains the sample JSON data that is used in the script.js file to build the table.
+**handleJson.json** : This file contains functions to handle CRUD operations of the myTailwind.json file via the command line. To launch the file and access its functionality, use the following command on your terminal/command line:
+```
+PS C:\myReact> node .\handleJson.js 
 
+[=== Menu ====]
+Select an option:
+1. updateID
+2. addData
+``` 
 **myTailwind.json** : This file contains data to use for Tailwind styles using classNames.
 
 ## Usage
