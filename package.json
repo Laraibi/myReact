@@ -1,0 +1,18 @@
+{
+    "name": "my-react",
+    "version": "1.0.0",
+    "description": "A React-like library built from scratch for learning purposes.",
+    "main": "myReact.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Laraibi"
+    },
+    "keywords": [
+        "myReact",
+        "React",
+        "component-based",
+        "library"
+    ],
+    "author": "Laraibi Mehdi",
+    "license": "MIT"
+}
