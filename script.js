@@ -1,37 +1,44 @@
+fetch("data.json")
+  .then((response) => response.json())
+  .then((response) => {
+    buildTable(response.personnes);
+  });
 
+const buildTable = (data) => {
+  let tdListdata = Object.keys(data[0]).map(
+    (key) =>
+      new myReact(
+        "th",
+        { },
+        [key],1
+      )
+  );
 
-data = [
-    { name: "yassine", age: 28, sexe: "M" },
-    { name: "youssef", age: 30, sexe: "M" },
-    { name: "Fatima", age: 25, sexe: "F" },
-]
+  let tabledata = new myReact("table", {  }, [
+    new myReact("thead", {}, [
+      new myReact("tr", {  }, tdListdata,1),
+    ],1),
+    new myReact(
+      "tbody",
+      {},
+      data.map(
+        (persone) =>
+          new myReact(
+            "tr",
+            {},
+            Object.keys(persone).map(
+              (key) =>
+                new myReact("td", { }, [persone[key]],1)
+            ),1
+          )
+      ),1
+    ),
+  ]);
 
-
-
-const listItems = [
-    new myReact('li', {}, ['youssef']),
-    new myReact('li', {}, ['Mehdi']),
-    new myReact('li', {}, ['Yassine']),
-]
-const header = new myReact('header', { className: 'header' }, [
-    new myReact('h1', {}, ['Hello World']),
-    new myReact('img', {}, ['This is a JSX Replacement']),
-
-    new myReact('ul', {}, listItems),
-]);
-
-
-const table = new myReact('table', {}, [
-    new myReact('thead', {}, [
-        new myReact("tr", {}, Object.keys(data[0]).map((th) => new myReact('td', {}, [th])))
-    ]),
-    new myReact('tbody', {},
-        data.map((person) => new myReact("tr", {},
-            Object.keys(person).map((key) => new myReact('td', {}, [person[key]])))))
-])
-
-console.log(table)
-document.body.appendChild(header.render());
-document.body.appendChild(table.render());
-
-
+  document.body.appendChild(tabledata.render());
+};
+const helloWord = ()=>{
+  alert("hello word")
+}
+const btn= new myReact('button',{onclick:helloWord},['Search'],2)
+document.body.appendChild(btn.render())
