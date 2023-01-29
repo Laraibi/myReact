@@ -1,0 +1,29 @@
+{
+ "personnes": [
+  {
+    "name": "mehdi",
+    "fonction": "formateur",
+    "age": "30"
+  },
+  {
+    "name": "yassine",
+    "fonction": "formateur",
+    "age": "31"
+  },
+  {
+    "name": "oussama",
+    "fonction": "candidat",
+    "age": "22"
+  },
+  {
+    "name": "aymen",
+    "fonction": "candidat",
+    "age": "23"
+  },
+  {
+    "name": "mohammed",
+    "fonction": "candidat",
+    "age": "28"
+  }
+ ]
+}
