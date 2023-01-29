@@ -2,37 +2,38 @@
   "allStyles": [
     {
       "id": 1,
-      "styles": [
-        {
-          "htmlElement": "table",
-          "class": "min-w-full mt-20"
-        },
-        {
-          "htmlElement": "th",
-          "class": "text-md bg-gray-100 rounded-t-md font-medium text-gray-900 px-6 py-4 text-left"
-        },
-        {
-          "htmlElement": "thead",
-          "class": "border-b"
-        },
-        {
-          "htmlElement": "tr",
-          "class": "bg-white border-b"
-        },
-        {
-          "htmlElement": "td",
-          "class": "px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900"
-        }
-      ]
+      "htmlElement": "table",
+      "class": "min-w-full mt-20"
     },
     {
       "id": 2,
-      "styles": [
-        {
-          "htmlElement": "button",
-          "class": "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-        }
-      ]
+      "htmlElement": "th",
+      "class": "text-md bg-gray-100 rounded-t-md font-medium text-gray-900 px-6 py-4 text-left"
+    },
+    {
+      "id": 3,
+      "htmlElement": "thead",
+      "class": "border-b"
+    },
+    {
+      "id": 4,
+      "htmlElement": "tr",
+      "class": "bg-white border-b"
+    },
+    {
+      "id": 5,
+      "htmlElement": "td",
+      "class": "px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900"
+    },
+    {
+      "id": 6,
+      "htmlElement": "button",
+      "class": "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+    },
+    {
+      "id": 8,
+      "htmlElement": "h1",
+      "class": "font-medium leading-tight text-5xl mt-0 mb-2 text-blue-600"
     }
   ]
 }

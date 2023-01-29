@@ -9,15 +9,15 @@ const buildTable = (data) => {
     (key) =>
       new myReact(
         "th",
-        { },
-        [key],1
+        {},
+        [key], 2
       )
   );
 
-  let tabledata = new myReact("table", {  }, [
+  let tabledata = new myReact("table", {}, [
     new myReact("thead", {}, [
-      new myReact("tr", {  }, tdListdata,1),
-    ],1),
+      new myReact("tr", {}, tdListdata, 4),
+    ], 1),
     new myReact(
       "tbody",
       {},
@@ -28,17 +28,19 @@ const buildTable = (data) => {
             {},
             Object.keys(persone).map(
               (key) =>
-                new myReact("td", { }, [persone[key]],1)
-            ),1
+                new myReact("td", {}, [persone[key]], 1)
+            ), 4
           )
-      ),1
+      ), 5
     ),
-  ]);
+  ],1);
 
   document.body.appendChild(tabledata.render());
 };
-const helloWord = ()=>{
+const helloWord = () => {
   alert("hello word")
 }
-const btn= new myReact('button',{onclick:helloWord},['Search'],2)
+const btn = new myReact('button', { onclick: helloWord }, ['Search'], 6)
 document.body.appendChild(btn.render())
+const h1 = new myReact('h1', { onclick: helloWord }, ['title'], 8)
+document.body.appendChild(h1.render())
