@@ -29,7 +29,7 @@ const addData = () => {
 
     readline.question("Enter HTML element: ", (htmlElement) => {
       readline.question("Enter class value: ", (classValue) => {
-        fs.readFile("myTailwind.json", "utf-8", (err, data) => {
+        fs.readFile(tailWindFilePath, "utf-8", (err, data) => {
           if (err) {
             return reject(err);
           }
