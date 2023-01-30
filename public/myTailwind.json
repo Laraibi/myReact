@@ -3,17 +3,17 @@
     {
       "id": 1,
       "htmlElement": "table",
-      "class": "w-[600px] mt-20 mx-auto"
+      "class": "w-[600px] mt-10 mx-auto divide-y divide-gray-200 text-sm shadow-xl"
     },
     {
       "id": 2,
       "htmlElement": "th",
-      "class": "text-md bg-gray-100 rounded-t-md font-medium text-gray-900 px-6 py-4 text-left"
+      "class": "bg-gray-100 px-4 py-2 text-left text-center "
     },
     {
       "id": 3,
       "htmlElement": "thead",
-      "class": "border-b"
+      "class": "bg-gray-100 "
     },
     {
       "id": 4,
@@ -23,12 +23,12 @@
     {
       "id": 5,
       "htmlElement": "td",
-      "class": "px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900"
+      "class": "whitespace-nowrap px-4 py-3 font-medium text-gray-900"
     },
     {
       "id": 6,
       "htmlElement": "button",
-      "class": "bg-blue-500 hover:bg-blue-700 text-white  py-1 px-1 rounded mx-1"
+      "class": "border border-black text-gray-700 hover:bg-gray-300 w-5 h-5 text-center rounded-full mx-1"
     },
     {
       "id": 7,
@@ -43,7 +43,12 @@
     {
       "id": 9,
       "htmlElement": "input",
-      "class": "block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+      "class": "block mx-auto w-96 p-4 mt-5 pl-10 text-sm text-gray-900 border border-gray-300 rounded-2xl bg-gray-50 focus:ring-blue-500 focus:border-blue-500 "
+    },
+    {
+      "id": 10,
+      "htmlElement": "tbody",
+      "class": "divide-y divide-gray-200 text-center"
     }
   ]
 }
