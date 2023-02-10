@@ -1,9 +1,9 @@
 {
  "personnes": [
   {
-    "name": "ihssan",
-    "fonction": "formateur",
-    "age": "30"
+    "name": "hamza",
+    "fonction": "student",
+    "age": "26"
   },
   {
     "name": "yassine",
